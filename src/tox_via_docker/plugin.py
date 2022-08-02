@@ -19,9 +19,9 @@ def tox_addoption(parser):
 @hookimpl
 def tox_configure(config):
     """Access your option during configuration"""
-    verbosity0("flag magic is: {}".format(config.option.magic))
+    verbosity0(f"flag magic is: {config.option.magic}")
 
 
 @hookimpl
 def tox_runtest_post(venv):
-    verbosity0("cinderella is {}".format(venv.envconfig.cinderella))
+    verbosity0(f"cinderella is {venv.envconfig.cinderella}")

@@ -2,7 +2,7 @@ from datetime import datetime
 
 import sphinx_rtd_theme
 
-TODAY = datetime.today()
+TODAY = datetime.now()
 
 name = "tox plugin cookiecutter"
 copyright = f"2018-{TODAY.year}"
